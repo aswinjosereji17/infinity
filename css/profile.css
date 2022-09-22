@@ -1,0 +1,29 @@
+table{
+    margin: auto;
+    padding-top: 80px;
+    font-size: 20px;
+
+}
+.d1{
+    height: 110px ;
+    background-color: black;
+    color: chartreuse;
+    text-align: center;
+}
+.d2{
+    height: 400px;
+    background-color:rgb(223, 221, 231);
+}
+.d3{
+    height: 110px;
+    background-color: black;
+
+}
+.h11{
+    padding-top: 30px;
+}
+p{
+    text-align: center;
+    color: blanchedalmond;
+    padding-top: 5px;
+}

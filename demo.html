@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        /*
+        $(document).ready(function(){
+            $('#helo').hide("slow");
+            $('.p22').hide("fast");
+            $('.b22').hide(20000);
+
+
+        });*/
+
+        /*helooo22
+        $(document).ready(function(){
+            $('.b22').click(function(){
+                $('#helo').toggle();
+
+            });
+            $('#b11').dblclick(function(){
+                $('#p11').toggle();
+
+            });
+            $('#h33').mouseenter(function(){
+                alert("hello");
+            });
+            $('.p33').mouseleave(function(){
+                alert("hello world");
+            });
+            $('.h22').hover(function(){
+                alert("hello*****world enter");
+            },
+            function(){
+                alert("hello*****world leave");
+            });
+
+
+        });
+        */
+        $(document).ready(function () {
+            $('#b11').click(function () {
+                $('#helo').hide();
+
+            });
+            $('.b22').click(function () {
+                $('#helo').show();
+            });
+            $('.p33').mouseup(function(){
+                alert("hello world");
+            });
+            $('.p22').mouseleave(function(){
+                alert("hello world");
+            });
+            $("input").focus(function(){
+                $(this).css("background-color","green")
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","red")
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <h1 id="helo">Time</h1>
+    <p id="p11">Time is the continued sequence of existence and events that occurs in an apparently </p>
+    <h2 class="h22">head2</h2>
+    <p class="p22">Time has long been an important subject of study in religion, philosophy, and science,</p>
+    <h3 id="h33">head3</h3>
+    <p class="p33">The physical nature of time is addressed by general relativity with respect to events </p>
+    <input type="button" value="button1" id="b11">
+    <input type="button" value="button2" class="b22">
+    <input type="text">
+
+
+</body>
+
+</html>

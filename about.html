@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="jquery-3.6.0.js"></script>
+
+
+</head>
+<body class="b2">
+    <div class="d1">
+        <h1 class="topp">About</h1>
+    
+        <p1>
+            Equitable access to safe and effective vaccines is critical to ending the <mark>COVID-19</mark> pandemic,
+            so it is hugely encouraging to see so many vaccines proving and going into development.
+            WHO is working tirelessly with partners to develop, manufacture and deploy safe and effective vaccines. 
+            Safe and effective vaccines are a game-changing tool: but for the foreseeable future we must continue wearing masks,
+            cleaning our hands, ensuring good ventilation indoors, physically distancing and avoiding crowds. 
+            Being vaccinated does not mean that we can throw caution to the wind and put ourselves and others at risk,
+            particularly because research is still ongoing into how much vaccines protect not only against
+            disease but also against infection and transmission.
+        </p1>
+        <p2>
+            <h3>Covid-19 vaccines licensed in India</h3>
+            Two vaccines were granted emergency use authorization by the Central Drugs Standard Control Organization 
+            (CDSCO) in India, Covishield® (AstraZeneca's vaccine manufactured by Serum Institute of India) and Covaxin®
+             (manufactured by Bharat Biotech Limited). Sputnik - V has been granted EUA in the month of April 2021.
+        </p2>
+        <p3>
+            <h3>Possible side effects</h3>
+            COVID-19 vaccine will be introduced only when the safety is proven. As is true for other vaccines,
+             the common side effects in some individuals could be mild fever, pain, etc. at the site of injection. 
+             States have been asked to start making arrangements to deal with any COVID-19 vaccine-related side-effects 
+             as one of the measures towards safe vaccine delivery among masses.
+        </p3>
+    </div>
+    <div class="d2">
+        <img src="abph1.jpg" id="im1" width="400px">  
+        <img src="abph3.jfif" id="im2" width="400px" >
+
+        <img src="abph2.jpeg" id="im3" width="267px">
+
+    </div>
+    
+    <div>
+        <p id="total">Total Vaccination Doses : 1,33,08,35,000</p>
+
+    </div>
+    <div>
+        <p id="p11">Where can I register for COVID-19 vaccination?</p>
+        <p id="p111">==>You can log into the CoWIN portal using the link 
+             and click on the “Register / Sign In ” tab to register for COVID-19 vaccination.</p>
+             <p id="p22">Which age groups can register for vaccination on the CoWIN portal?</p>
+                <p id="p222">==>All beneficiaries aged 18 years and above can register for vaccination.</p>
+                     <p id="p33">Can I register for vaccination without Aadhaar Card?</p>
+                         <p id="p333">==>Yes, you can register on CoWIN portal using any of the following ID proofs:<br>
+                            a. Aadhaar Card<br>
+                            b. Driving License<br>
+                            c. Passport<br>
+                            </p>
+    </div>
+    <div class="bottomm">
+        <p id="pb1" >Contact Us</p>
+        <p id="pb2" >Helpline: +91-7028242627(Toll Free-1075)</p>
+        <p id="pb3"> Copyright ©  2021 CoWIN. All Rights Reserved</p>
+        
+</div>
+        
+</body>
+<script>
+    $(document).ready(function () {
+      $('#total').mouseover(function () {
+          $('#total').css("color","#800080")
+      });
+      $('#total').mouseleave(function () {
+          $('#total').css("color","#1a0000")
+      });
+      $('#p11').click(function () {
+          $('#p111').show()
+          $('#p222').hide()
+          $('#p333').hide()
+
+
+      });
+      $('#p111').click(function () {
+          $('#p111').hide()
+      });
+      $('#p22').click(function () {
+          $('#p222').show()
+          $('#p111').hide()
+          $('#p333').hide()
+
+      });
+      $('#p222').click(function () {
+          $('#p222').hide()
+      });
+      $('#p33').click(function () {
+          $('#p333').show()
+          $('#p222').hide()
+          $('#p111').hide()
+
+
+      });
+      $('#p333').click(function () {
+          $('#p333').hide()
+      });
+
+    });
+
+  </script>
+</html>

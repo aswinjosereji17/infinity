@@ -1,0 +1,33 @@
+.top_log{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form_log{
+    margin-left: 500px;
+    margin-top: 110px;
+}
+.but_log{
+    height: 40px;
+
+    width: 304px;
+    margin-top: 30px;
+    background-color: #F66b0e;
+    border-color: #F66b0e ;
+
+}
+.logo{
+    width: 250px;
+    height: 70px;
+    margin-top: 15px;
+}
+th{
+    background-color: #EAF6F6;
+    color:black;
+    text-align: center;
+    padding-left: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

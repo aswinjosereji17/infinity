@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="jquery-3.6.0.js"></script>
+
+</head>
+<body>
+    <div class="top">
+        <h1>Sign In</h1>
+        
+    </div>
+
+
+        
+    <div class="mid">
+        <table class="helo">
+            
+            <tr>
+                <td>Username :</td>
+            </tr>
+            <tr>
+                <td ><input type="text" size="40px" id="un"></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+            </tr>
+            <tr>
+                <td><input type="password" size="40px" id="pwd"></td>
+            </tr>
+            <tr>
+                <th colspan="2"><button onclick="login1()" id="b1">Sign In</button></th>
+            </tr>
+        </table>
+       
+        </div>
+
+        <div class="bottomm">
+            <h4 id="h4b" >Contact Us</h4>
+            <p id="pb1">Helpline: +91-7028242627(Toll Free-1075)</p>
+            <p id="pb2"> Copyright ©  2021 CoWIN. All Rights Reserved</p>
+            
+    </div>
+            
+    
+</body>
+<script>
+    
+    function login1(){
+        var uname=document.getElementById("un").value;
+    var pwd=document.getElementById("pwd").value;
+     if(uname=="aswin" && pwd=="aswin") {
+            window.location='profile.html'
+        }
+else
+        {
+            alert("Invalid username or password")
+        }
+    }
+</script>
+<script>
+    $(document).ready(function () {
+      $("input").focus(function () {
+        $(this).css("background-color", "lightgrey");
+      });
+      $("input").blur(function () {
+        $(this).css("background-color", "white");
+      });
+    });
+  </script>
+</html>
